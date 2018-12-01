@@ -20,6 +20,11 @@ function SimpleAppBar(props) {
         <Toolbar>
           <Typography variant={tamano} color="inherit" style={{fontFamily:'Helvetica Neue'}}>
             {title}
+            {title}
+            {title}
+            {title}
+            {title}
+            
           </Typography>
           {
               children
