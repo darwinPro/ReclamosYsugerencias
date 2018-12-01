@@ -31,6 +31,9 @@ class Layout extends Component {
                     <Typography variant="subtitle2" style={{fontFamily:'Helvetica Neue'}} >
                             Desarrollado por BtaApps
                     </Typography>
+                    <Typography variant="subtitle2" style={{fontFamily:'Helvetica Neue'}} >
+                            Nueva versioin
+                    </Typography>
                 </MenuAppbar>
                  <style jsx global>{`
                     body{
