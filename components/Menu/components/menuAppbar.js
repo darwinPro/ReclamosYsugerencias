@@ -1,0 +1,37 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+
+const styles = {
+  root: {
+    flexGrow: 1,
+  },
+};
+
+function SimpleAppBar(props) {
+  const { classes,tamano,title,posision,children } = props;
+
+  return (
+    <div className={classes.root}>
+      <AppBar position={posision} color="default" style={{top:'auto',bottom:0,}}>
+        <Toolbar>
+          <Typography variant={tamano} color="inherit" style={{fontFamily:'Helvetica Neue'}}>
+            {title}
+          </Typography>
+          {
+              children
+          }
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
+}
+
+SimpleAppBar.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(SimpleAppBar);
